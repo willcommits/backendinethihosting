@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+  external_labels:
+    monitor: inethi-monitor
+scrape_configs:
+- job_name: blackbox
+  scrape_interval: 5s
+  static_configs:
+  - targets:
+    - ''
+    - 128.10.0.1
+    - 8.8.8.8
+    - 208.67.220.220
+    - 192.168.1.1
+    - 172.16.9.47
+    - 208.67.222.222
+    - 123.123.12
